@@ -31,15 +31,13 @@ SEMPO is a novel time series foundation model with significantly reduced model s
 ## 📚 Pre-training Data
 
 
-## Requirements
+## ⚙️ Installation
 
-To install requirements:
+Install Pytorch 2.1.2+cu118 with Python 3.10, and then install the dependencies:
 
 ```setup
 pip install -r requirements.txt
 ```
-
->📋  SEMPO is implemented in Pytorch 2.1.2+cu118 with Python 3.10. All the experiments are run on 4 A6000-48G GPUs.
 
 ## Pre-training
 
