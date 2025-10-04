@@ -73,7 +73,19 @@ bash ./scripts/time_series_forecasting/zero_shot/sempo_weather.sh
 
 ## Contributing
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+>📋  Pick a licence and describe how to contribute to your code repository.
+
+## Citation
+
+> 🙋 Please let us know if you find out a mistake or have any suggestions!
+
+> 🌟 If you find the SEMPO model helpful in your research, please consider to star this repository and cite the
+> corresponding [paper](https://arxiv.org/pdf/2409.16040):
+
+```
+@misc{
+}
+```
 
 
 
