@@ -11,6 +11,8 @@
 
 </div>
 
+SEMPO is a novel time series foundation model with significantly reduced model size and pre-training scale, yet demonstrating superior generalization ability on diverse downstream forecasting tasks.
+
 ## 🎉 What's New
 
 * Oct 2025: Release of SEMPO library, along with SEMPO preprint now on [arXiv](https://arxiv.org/pdf/2409.16040).
@@ -19,7 +21,8 @@
 
 ## 📋 Introduction
 
-SEMPO is a novel time series foundation model with significantly reduced model size and pre-training scale, yet demonstrating superior generalization ability on diverse downstream forecasting tasks.
+>📋  This work proposes SEMPO, a novel lightweight foundation model that requires pretraining on relatively small-scale data, yet exhibits strong general time series forecasting. SEMPO comprises two key modules: 1) energy-aware SpEctral decomposition module, that substantially improves the utilization of pre-training data by modeling not only the high-energy frequency signals but also the low-energy yet informative frequency signals that are ignored in current methods; and 2) Mixture-of-PrOmpts enabled Transformer, that learns heterogeneous temporal patterns through small dataset-specific prompts and adaptively route time series tokens to these prompt-based experts for parameter-efficient model adaptation across different datasets and domains. Equipped with these modules, SEMPO significantly reduces both pre-training data scale and model size, while achieving strong generalization. 
+
 
 <p align="center">
     <img src="figures/framework.png" alt="" align="center" width="700px" />
