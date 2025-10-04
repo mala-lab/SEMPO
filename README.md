@@ -22,7 +22,7 @@
 SEMPO is a novel time series foundation model with significantly reduced model size and pre-training scale, yet demonstrating superior generalization ability on diverse downstream forecasting tasks.
 
 <p align="center">
-    <img src="figures/sempo_framework.png" alt="" align="center" width="700px" />
+    <img src="figures/framework.png" alt="" align="center" width="700px" />
 </p>
 
 ## 📚 Pre-training Data
