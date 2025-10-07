@@ -30,7 +30,7 @@ SEMPO is a novel time series foundation model with significantly reduced model s
 
 ## 📚 Pretraining Data
 
-All pretraining datasets except PEMS04/07 use the [numpy format UTSD](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/) and the complete pretraining dataset can be obtained from [Google Drive](https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-hero-goto). 
+All pretraining datasets, except PEMS04 and PEMS07, use the [numpy format UTSD](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/). You can access the datasets from [Google Drive](https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-hero-goto), then place the downloaded contents under `./dataset`. 
 
 ## ⚙️ Installation
 
@@ -40,52 +40,56 @@ Install Pytorch 2.1.2+cu118 with Python 3.10, and then install the dependencies:
 pip install -r requirements.txt
 ```
 
-## Pre-training
+## 🏋️ Pretraining
 
-To pretrain the model(s) in the paper, run this command:
+To pretrain the model(s) in the paper, run the follow command. This command supports both single-GPU and multi-GPU execution on a single node. For convenience, we provide a single-GPU pretrained model in the folder `./checkpoints/`.
 
 ```pre-training
 bash ./scripts/time_series_forecasting/pretrain/sempo_utsd.sh
 ```
 
->📋  This command supports both single-GPU and multi-GPU execution on a single node. For convenience, we provide a single-GPU pretrained model in the folder ./checkpoints/.
+## 🔥 Fine-tuning
 
-## Fine-tuning
-
-To fine-tune the model(s) in the paper, run this command:
+To fine-tune the model(s) in the paper, use the few-shot examples in the folder `./scripts/time_series_forecasting/few_shot`. Run with --is_pretraining 0, --is_training 1, and --is_zeroshot 0, using two configurations of 5% and 10%. For example:
 
 ```fine-tuning
 bash ./scripts/time_series_forecasting/few_shot/sempo_ETTh1.sh
 ```
 
->📋  1. Put downstream datasets under the folder ./dataset/. 2. Put the checkpoint under the folder ./checkpoints/. 3. Fine-tune the model. We provide the fine-tuning examples under the folder ./scripts/time_series_forecasting/Long_term. We set --is_pretraining 0, --is_training 1, and --is_zeroshot 0, with two configurations of 5% and 10%.
+## 🧊 Evaluation
 
-## Evaluation
-
-To evaluate the model(s) in the paper, run this command:
+To evaluate the model(s) in the paper, use the zero-shot examples in the folder `./scripts/time_series_forecasting/zero_shot`. Run with --is_pretraining 0, --is_training 0, and --is_zeroshot 1. For example:
 
 ```eval
 bash ./scripts/time_series_forecasting/zero_shot/sempo_weather.sh
 ```
 
->📋  Following the 1 and 2 steps as the aforementioned fine-tuning process. 3. Evaluate the model. We provide the evaluation examples under the folder ./scripts/time_series_forecasting/Long_term. We set --is_pretraining 0, --is_training 0, and --is_zeroshot 1.
+To evaluate other advanced foundation models such as Chronos-Bolt, first download their pretrained weights from [HuggingFace](https://huggingface.co/collections/amazon/chronos-models-65f1791d630a8d57cb718444). Then use the zero-shot examples above and run with --task_name long_term_forecast_chronos and --model Chronos.
 
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository.
 
 ## Citation
 
-> 🙋 Please let us know if you find out a mistake or have any suggestions!
-
-> 🌟 If you find the SEMPO model helpful in your research, please consider to star this repository and cite the
-> corresponding [paper](https://arxiv.org/pdf/2409.16040):
+If you're using this repo in your research or applications, please cite our paper:
 
 ```
 @misc{
 }
 ```
 
+## Acknowledgement
 
+We appreciate the following GitHub repos for providing valuable code bases and efforts.
+
+- Time-MoE [\[repo\]](https://github.com/Time-MoE/Time-MoE)
+- TTM [\[repo\]](https://github.com/glehet/TTM1)
+- uni2ts [\[repo\]](https://github.com/SalesforceAIResearch/uni2ts)
+- chronos-forecasting [\[repo\]](https://github.com/amazon-science/chronos-forecasting)
+- Large-Time-Series-Model [\[repo\]](https://github.com/thuml/Large-Time-Series-Model)
+- gift-eval [\[repo\]](https://github.com/SalesforceAIResearch/gift-eval)
+- FilterNet [\[repo\]](https://github.com/aikunyi/FilterNet)
+- TSLANet [\[repo\]](https://github.com/emadeldeen24/TSLANet)
+
+## License
+
+This project is licensed under the Apache-2.0 License.
 
