@@ -1,0 +1,50 @@
+ip: 127.0.0.1, port: 29501, hosts: 1, rank: 0, local_rank: 0, gpus: 1
+init_process_group finished
+Args in experiment:
+>>>>>>>start training : long_term_forecast_SEMPO_CI_ftM_sl512_ll48_pl336_pl64_dm256_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 3339
+val 17815
+test 17815
+loading model
+Model parameters:  4070979
+	iters: 0, epoch: 1 | loss: 0.5624321 | cost_time: 2 | memory: allocated 241MB, reserved 304MB, cached 304MB 
+Epoch: 1 cost time: 4.343452453613281
+Epoch: 1, Steps: 42 | Train Loss: 0.5833445 Vali Loss: 1.3366319 Test Loss: 0.5929214
+Validation loss decreased (inf --> 1.336632).  Saving model ...
+Updating learning rate to 0.0005
+	iters: 0, epoch: 2 | loss: 0.4858918 | cost_time: 8 | memory: allocated 265MB, reserved 334MB, cached 334MB 
+Epoch: 2 cost time: 2.3254928588867188
+Epoch: 2, Steps: 42 | Train Loss: 0.5367466 Vali Loss: 1.3725177 Test Loss: 0.5827920
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+	iters: 0, epoch: 3 | loss: 0.4714989 | cost_time: 8 | memory: allocated 265MB, reserved 334MB, cached 334MB 
+Epoch: 3 cost time: 2.258854627609253
+Epoch: 3, Steps: 42 | Train Loss: 0.5098479 Vali Loss: 1.4007217 Test Loss: 0.5772208
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+	iters: 0, epoch: 4 | loss: 0.4505064 | cost_time: 8 | memory: allocated 265MB, reserved 334MB, cached 334MB 
+Epoch: 4 cost time: 2.339498519897461
+Epoch: 4, Steps: 42 | Train Loss: 0.4904938 Vali Loss: 1.4493698 Test Loss: 0.5804465
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+	iters: 0, epoch: 5 | loss: 0.4293901 | cost_time: 8 | memory: allocated 265MB, reserved 334MB, cached 334MB 
+Epoch: 5 cost time: 2.318535327911377
+Epoch: 5, Steps: 42 | Train Loss: 0.4705737 Vali Loss: 1.4383247 Test Loss: 0.5843857
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.00045000000000000004
+	iters: 0, epoch: 6 | loss: 0.4189976 | cost_time: 9 | memory: allocated 265MB, reserved 334MB, cached 334MB 
+Epoch: 6 cost time: 2.629945993423462
+Epoch: 6, Steps: 42 | Train Loss: 0.4554859 Vali Loss: 1.4634017 Test Loss: 0.5855225
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.00040500000000000003
+	iters: 0, epoch: 7 | loss: 0.4058227 | cost_time: 9 | memory: allocated 265MB, reserved 334MB, cached 334MB 
+Epoch: 7 cost time: 2.543402671813965
+Epoch: 7, Steps: 42 | Train Loss: 0.4425303 Vali Loss: 1.5146534 Test Loss: 0.5990757
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : long_term_forecast_SEMPO_CI_ftM_sl512_ll48_pl336_pl64_dm256_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  6481306
+test 17815
+test shape: (139, 128, 336, 1) (139, 128, 336, 1)
+test shape: (17792, 336, 1) (17792, 336, 1)
+mse:0.4382021427154541, mae:0.44669023156166077

@@ -1,0 +1,14 @@
+ip: 127.0.0.1, port: 29504, hosts: 3, rank: 2, local_rank: 2, gpus: 3
+init_process_group finished
+ip: 127.0.0.1, port: 29504, hosts: 3, rank: 1, local_rank: 1, gpus: 3
+init_process_group finished
+ip: 127.0.0.1, port: 29504, hosts: 3, rank: 0, local_rank: 0, gpus: 3
+init_process_group finished
+Args in experiment:
+>>>>>>>testing : long_term_forecast_SEMPO_CI_ftM_sl512_ll48_pl336_pl64_dm256_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  6479650
+test 17815
+loading model
+test shape: (185, 32, 336, 1) (185, 32, 336, 1)
+test shape: (5920, 336, 1) (5920, 336, 1)
+mse:0.41365373134613037, mae:0.4307264983654022
