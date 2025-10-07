@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## 🏋️ Pretraining
 
-To pretrain the model(s) in the paper, run the follow command. This command supports both single-GPU and multi-GPU execution on a single node. For convenience, we provide a single-GPU pretrained model in the folder `./checkpoints/`.
+To pretrain the model(s) in the paper, run the follow command, which supports both single-GPU and multi-GPU execution on a single node. For convenience, we provide a single-GPU pretrained model in the folder `./checkpoints/`.
 
 ```pre-training
 bash ./scripts/time_series_forecasting/pretrain/sempo_utsd.sh
