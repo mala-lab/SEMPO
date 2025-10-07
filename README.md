@@ -64,7 +64,7 @@ To evaluate the model(s) in the paper, use the zero-shot examples in the folder 
 bash ./scripts/time_series_forecasting/zero_shot/sempo_weather.sh
 ```
 
-To evaluate other advanced foundation models such as Chronos-Bolt, first download their pretrained weights from [HuggingFace](https://huggingface.co/collections/amazon/chronos-models-65f1791d630a8d57cb718444). Then use the zero-shot examples above and run with: 
+To evaluate other advanced foundation models such as Chronos-Bolt, first download their pretrained weights from [HuggingFace](https://huggingface.co/collections/amazon/chronos-models-65f1791d630a8d57cb718444) and place the downloaded weights under `./models`. Then use the zero-shot examples above and run with: 
 
 ```eval
 --task_name long_term_forecast_chronos --model Chronos
