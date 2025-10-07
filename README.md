@@ -21,16 +21,16 @@ SEMPO is a novel time series foundation model with significantly reduced model s
 
 ## Introduction
 
-This work proposes SEMPO, a novel lightweight foundation model that requires pretraining on relatively small-scale data, yet exhibits strong general time series forecasting. SEMPO comprises two key modules: 1) energy-aware SpEctral decomposition module, that substantially improves the utilization of pre-training data by modeling not only the high-energy frequency signals but also the low-energy yet informative frequency signals that are ignored in current methods; and 2) Mixture-of-PrOmpts enabled Transformer, that learns heterogeneous temporal patterns through small dataset-specific prompts and adaptively route time series tokens to these prompt-based experts for parameter-efficient model adaptation across different datasets and domains. Equipped with these modules, SEMPO significantly reduces both pre-training data scale and model size, while achieving strong generalization. 
+> This work proposes SEMPO, a novel lightweight foundation model that requires pretraining on relatively small-scale data, yet exhibits strong general time series forecasting. SEMPO comprises two key modules: 1) energy-aware SpEctral decomposition module, that substantially improves the utilization of pre-training data by modeling not only the high-energy frequency signals but also the low-energy yet informative frequency signals that are ignored in current methods; and 2) Mixture-of-PrOmpts enabled Transformer, that learns heterogeneous temporal patterns through small dataset-specific prompts and adaptively route time series tokens to these prompt-based experts for parameter-efficient model adaptation across different datasets and domains. Equipped with these modules, SEMPO significantly reduces both pre-training data scale and model size, while achieving strong generalization. 
 
 
 <p align="center">
     <img src="figures/framework.png" alt="" align="center" width="700px" />
 </p>
 
-## 📚 Pre-training Data
+## 📚 Pretraining Data
 
-We use the [numpy format UTSD](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/) and [PEMS04/07](https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-hero-goto) as pretraining data. 
+All pretraining datasets except PEMS04/07 use the [numpy format UTSD](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/) and the complete pretraining dataset can be obtained from [Google Drive](https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-hero-goto). 
 
 ## ⚙️ Installation
 
