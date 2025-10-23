@@ -15,9 +15,9 @@ SEMPO is a novel time series foundation model with significantly reduced model s
 
 ## Updates/News
 
-* Oct 2025: Release of SEMPO library, along with SEMPO preprint now on [arXiv](https://arxiv.org/pdf/2409.16040).
+* Oct 2025: Release of SEMPO library, along with SEMPO preprint now on [arXiv](https://arxiv.org/pdf/2510.19710).
   
-* Sep 2025: The [SEMPO Paper](https://arxiv.org/abs/2402.02592) has been accepted to NeurIPS 2025 as a Poster presentation!
+* Sep 2025: The [SEMPO Paper](https://arxiv.org/pdf/2510.19710) has been accepted to NeurIPS 2025 as a Poster presentation!
 
 ## Introduction
 
@@ -75,7 +75,13 @@ To evaluate other advanced foundation models such as Chronos-Bolt, first downloa
 If you're using this repo in your research or applications, please cite our paper:
 
 ```
-@misc{
+@misc{he2025sempolightweightfoundationmodels,
+      title={SEMPO: Lightweight Foundation Models for Time Series Forecasting}, 
+      author={Hui He and Kun Yi and Yuanchi Ma and Qi Zhang and Zhendong Niu and Guansong Pang},
+      year={2025},
+      eprint={2510.19710},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/abs/2510.19710}, 
 }
 ```
 
