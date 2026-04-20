@@ -30,7 +30,7 @@ SEMPO is a novel time series foundation model with significantly reduced model s
 
 ## 📚 Pretraining Data
 
-All pretraining datasets, except PEMS04 and PEMS07, use the [numpy format UTSD](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/). You can access the datasets from [Google Drive](https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-hero-goto), then place the downloaded contents under `./dataset`. 
+All pretraining datasets, except PEMS04 and PEMS07, use the [numpy format UTSD](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/). You can access the datasets from [Google Drive](https://drive.google.com/drive/folders/12SGOHAyOcJv-crORAM0NLOf7-JM73R3s?usp=sharing), then place the downloaded contents under `./dataset`. 
 
 ## ⚙️ Installation
 
